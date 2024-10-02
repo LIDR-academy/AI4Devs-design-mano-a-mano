@@ -295,10 +295,7 @@ Could you please add a lean canvas diagram of the business model?
 
 
 Here is a Lean Canvas diagram that outlines the structure of the business model for an Applicant Tracking System (ATS). Each section represents a key aspect of the business model, such as the problem it solves, the target customer segments, the value proposition, and the revenue streams. The diagram visually organizes these elements to help clarify the core aspects of the ATS MVP's business strategy. ​
-
-
-FALTA DIAGRAMA (PANTALLAZO)
-
+See LeanCanvas.pngs
 
 # Prompt #7
 Now you are an expert software analyst. I am building the ATS system. List and briefly describe the 3 most important use cases to implement for achieving basic functionality
@@ -410,7 +407,7 @@ Could you please provide a high level system design (both explained and with an 
 5) Include load balancing and CDN
 
 
-PANTALLAZO
+See DataModelling.png
 
 # Prompt #10 ChatGPT
 
@@ -447,5 +444,6 @@ Application Processing Component: Handles applications, including status updates
 Search & Filter Component: Allows recruiters to search and filter candidates.
 Now, I'll create a simplified C4 Container diagram (C2) for the ATS system to visually represent the containers and how they interact. Let me generate the diagram for you.
 
-PANTALLAZO
+See C4diagram.png
+
 Here is a simplified C4 Container Diagram for an Applicant Tracking System (ATS). It visually represents the core containers of the system, such as the ATS Web Application, ATS API, Database, and external systems like Job Board API Integrations and the Notification Service. The arrows indicate how these containers interact with one another, as well as with external users like Recruiters/HR and Job Seekers. This diagram serves as a high-level architectural blueprint of the ATS system.
