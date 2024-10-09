@@ -1,0 +1,511 @@
+# LTI Company
+
+## Core Features & Their Value:
+
+### 1. 💾 **Centralized Candidate Database**
+   - **Value:** Stores resumes, applications, and candidate profiles in one place. Enables keyword searches for quick candidate filtering.
+   - **Advantage:** Improves efficiency by eliminating manual candidate tracking. Similar to Workable's user-friendly platform but focuses on speed for high-volume applications.
+   - **Disadvantage:** Competitors like Workable have more refined filtering algorithms that we’ll need to match.
+
+### 2. 🤖 **Automated Communication & Follow-ups**
+   - **Value:** Automates repetitive tasks such as interview scheduling, email follow-ups, and test assignment. Can handle rejections, or interview requests via templates.
+   - **Advantage:** Saves significant time, reduces human error, and improves candidate experience by giving quicker responses. Will go head-to-head with Breezy HR's automation but aim for more customization options.
+   - **Disadvantage:** Automation may feel impersonal; adding customization features can mitigate this.
+
+### 3. 🤝 **Collaboration Tools for Recruiters & Hiring Managers**
+   - **Value:** Shared notes, evaluation scorecards, and task assignments between recruiters and hiring managers in real-time.
+   - **Advantage:** Similar to Workable, it improves collaboration and decision-making by ensuring all relevant parties are updated. Add features for instant notifications or mobile collaboration to make it more attractive.
+   - **Disadvantage:** If not intuitive, team members may resist adopting the collaboration features, so it must prioritize ease of use.
+
+### 4. 📊 **Real-time Analytics & Reporting (Teamtailor-inspired)**
+   - **Value:** Provides insights into the recruitment funnel, application volume, time-to-hire, source efficiency, and diversity metrics.
+   - **Advantage:** Enables HR teams to track KPIs and optimize processes. By going beyond Teamtailor, include predictive analytics that forecast bottlenecks in hiring.
+   - **Disadvantage:** Complex reporting tools can overwhelm users if not presented in a digestible way. Offer custom dashboard views.
+
+### 5. 👷‍♂️ **Job Posting & Syndication**
+   - **Value:** Allows users to post job listings to multiple job boards and social media platforms in one click.
+   - **Advantage:** Competitor to Breezy HR's integrations, but offering more partnerships (LinkedIn, Indeed, niche job boards) can enhance this.
+   - **Disadvantage:** Some job boards charge for posting, so integrations might increase operational costs.
+
+### 6. 🛣️ **Customizable Career Page**
+   - **Value:** Branded and customizable career pages where candidates can apply directly.
+   - **Advantage:** Attracts more candidates with a personalized user experience. Offers more flexibility than Workable’s simple job page templates.
+   - **Disadvantage:** Requires some design expertise from the customer, though templates can mitigate this issue.
+
+### 7. 🗓️ **Interview Scheduling & Calendar Integration**
+   - **Value:** Syncs interviews with Google Calendar, Outlook, etc., and offers candidate self-scheduling.
+   - **Advantage:** Reduces back-and-forth communication. More comprehensive than Breezy HR's basic scheduling by also enabling reminders and rescheduling options for both parties.
+   - **Disadvantage:** Requires seamless sync between platforms; technical glitches could frustrate users.
+
+### 8. ⚙️**Integration with HR Tools & CRMs (Breezy HR-inspired)**
+   - **Value:** Connects with payroll systems, background check providers, video interview platforms, and CRMs.
+   - **Advantage:** By integrating with various tools, we can streamline the hiring workflow. Consider going beyond Breezy HR’s standard integrations with more niche tools, such as coding platforms like HackerRank for technical roles.
+   - **Disadvantage:** More integrations mean a heavier API maintenance burden.
+
+### 9. 📱 **Mobile Access for Recruiters**
+   - **Value:** A mobile-friendly version that allows recruiters to track progress, manage candidates, and communicate on the go.
+   - **Advantage:** Meets the flexibility that modern recruiters require, and could outpace competitors like Workable by offering more intuitive, fully-functional mobile tools.
+   - **Disadvantage:** Requires substantial mobile UX testing to match desktop functionality.
+
+## Bonus Features for Competitive Edge:
+
+### 10. 💻 **AI Resume Screening**
+   - **Value:** Automatically ranks and scores candidates based on job requirements.
+   - **Advantage:** Reduces the manual burden on recruiters, speeding up shortlisting. A step beyond what many competitors offer.
+   - **Disadvantage:** AI-driven results can lead to bias if not carefully tuned. Transparency in how AI scoring works is essential.
+
+### 11. 📹 **Video Interview Platform Integration**
+   - **Value:** Allows recorded or live video interviews directly through the ATS.
+   - **Advantage:** Saves time and adds flexibility to remote hiring processes. Go beyond Breezy HR by integrating multiple video platforms or offering in-app video interviews.
+   - **Disadvantage:** Performance issues during live interviews could reflect poorly on the product if the video tool is buggy.
+
+### 12. 👥 **Candidate Nurturing & Talent Pools**
+   - **Value:** Build and maintain relationships with passive candidates for future roles through email campaigns and drip marketing.
+   - **Advantage:** It boosts long-term recruitment efficiency by building a pipeline. Competitors don’t always focus on this—Teamtailor does this well, but we could provide deeper segmentation options.
+   - **Disadvantage:** Requires HR teams to maintain the database regularly to keep it valuable.
+
+### 13. 📃 **Advanced GDPR Compliance Tools**
+   - **Value:** Ensures data privacy for candidates, with automated consent and data deletion processes.
+   - **Advantage:** Being fully compliant with global privacy laws provides peace of mind for international companies. Can surpass competitors by automating more of these legal workflows.
+   - **Disadvantage:** Constantly evolving privacy laws require continuous updates.
+
+---
+
+## Competitive Advantage:
+- **Advantages over Competitors:**
+   - **Workable:** Outdo Workable’s collaboration tools with more detailed notification and task management systems, and offer enhanced mobile features.
+   - **Teamtailor:** Surpass Teamtailor’s analytics by adding predictive hiring tools that forecast bottlenecks or applicant flow issues.
+   - **Breezy HR:** Offer more integrations and enhanced custom automation options for communication. Go beyond standard integrations, particularly for niche industries or complex hiring workflows.
+
+- **Disadvantages:**
+   - **Established Market Presence:** Competitors like Workable and Breezy HR already have large user bases and robust platforms, so breaking into the market will require exceptional ease of use and feature differentiation.
+   - **Cost:** Implementing AI, integrations, and compliance features adds development time and cost, which could make initial versions pricier for users.
+
+
+
+## Business model
+
+```mermaid
+graph TD
+  A[Problem] --> B1[HR inefficiency in tracking and managing candidates]
+  A --> B2[Lack of real-time collaboration between recruiters and hiring managers]
+  A --> B3[Repetitive tasks like sending emails and scheduling interviews]
+
+  C[Customer Segments] --> D1[Small and medium businesses (SMBs)]
+  C --> D2[Enterprise companies]
+  C --> D3[HR departments in tech-heavy industries]
+
+  E[Unique Value Proposition] --> F1[Automated candidate management and screening]
+  E --> F2[Real-time collaboration tools for recruiters and managers]
+  E --> F3[Customizable, all-in-one recruitment platform]
+
+  G[Solution] --> H1[Automated email and interview scheduling]
+  G --> H2[Integrated analytics and reporting tools]
+  G --> H3[Collaborative workflow for recruiters and managers]
+  
+  I[Channels] --> J1[Direct Sales]
+  I --> J2[Online Marketing]
+  I --> J3[HR Tech Partnerships]
+
+  K[Revenue Streams] --> L1[Subscription model (monthly/annual fees)]
+  K --> L2[Premium integrations and add-ons]
+
+  M[Cost Structure] --> N1[Development and maintenance]
+  M --> N2[Customer support and onboarding]
+  M --> N3[Marketing and sales efforts]
+
+  O[Key Metrics] --> P1[Customer acquisition cost (CAC)]
+  O --> P2[Customer lifetime value (LTV)]
+  O --> P3[Time-to-fill positions reduction]
+
+  Q[Unfair Advantage] --> R1[Advanced automation capabilities (AI-based screening)]
+  Q --> R2[Seamless third-party integrations with industry-specific tools]
+
+```
+
+### **Explanation of Each Block:**
+
+1. **Problem:** Highlights the major pain points you aim to solve.
+2. **Customer Segments:** Defines your target market, focusing on businesses that need to streamline recruitment processes.
+3. **Unique Value Proposition:** Emphasizes what sets your ATS apart—automation, collaboration, and customization.
+4. **Solution:** Lists key features like automated email handling, reporting tools, and enhanced collaboration for recruiters.
+5. **Channels:** How you plan to reach your customers, including direct sales and marketing efforts.
+6. **Revenue Streams:** Outlines how the business will make money, primarily through subscriptions and premium features.
+7. **Cost Structure:** Defines major operational costs—development, support, and marketing.
+8. **Key Metrics:** Metrics to track success, including CAC, LTV, and recruitment speed improvements.
+9. **Unfair Advantage:** Your competitive edge, such as advanced automation and deep integrations with third-party tools. 
+
+
+Here are the three main use cases and detailed descriptions for the Applicant Tracking System (ATS). I'll also provide a complete diagram for each one using Mermaid code.
+
+---
+
+### **Use Case 1: Job Posting & Syndication**
+#### **Description:**
+Recruiters create job postings in the ATS and syndicate them to multiple job boards with one click. This use case includes creating job descriptions, selecting job boards, and tracking the status of the post.
+
+#### **Steps:**
+1. **Recruiter logs in** to the ATS.
+2. **Recruiter creates a new job post**, entering job details like title, description, and requirements.
+3. **Recruiter selects** multiple job boards (e.g., LinkedIn, Indeed).
+4. **ATS syndicates the job** to the selected job boards.
+5. **Recruiter tracks** job post status and views incoming applications.
+
+#### **Diagram (Mermaid):**
+
+```mermaid
+graph TD
+  A[Recruiter logs in to ATS] --> B[Create job post]
+  B --> C[Select job boards]
+  C --> D[ATS syndicates job post]
+  D --> E[Job post appears on external job boards]
+  E --> F[Applicants submit resumes]
+  F --> G[ATS stores applications for the recruiter]
+```
+
+---
+
+### **Use Case 2: Candidate Screening and Shortlisting**
+#### **Description:**
+The ATS automates the initial screening of candidates based on predefined criteria, such as required skills or experience. Candidates are scored or ranked, and the recruiter can manually review and adjust shortlists.
+
+#### **Steps:**
+1. **ATS automatically scans** candidate resumes.
+2. **ATS ranks candidates** based on predefined rules (e.g., years of experience, skills).
+3. **Recruiter views the candidate ranking** and adjusts the shortlist as needed.
+4. **Recruiter moves selected candidates** to the next stage in the hiring process.
+
+#### **Diagram (Mermaid):**
+
+```mermaid
+graph TD
+  A[ATS receives applications] --> B[Scan resumes for keywords]
+  B --> C[Rank candidates by score]
+  C --> D[Show ranked list to recruiter]
+  D --> E[Recruiter adjusts shortlist]
+  E --> F[Move selected candidates to next stage]
+```
+
+---
+
+### **Use Case 3: Automated Interview Scheduling**
+#### **Description:**
+Once candidates pass the screening phase, the ATS handles scheduling interviews by integrating with calendar tools and offering candidate self-scheduling options.
+
+#### **Steps:**
+1. **Recruiter selects candidates** for interviews.
+2. **ATS sends interview requests** to candidates via email.
+3. **Candidates choose a time slot** based on recruiter availability.
+4. **ATS schedules the interview**, syncing with the recruiter’s calendar.
+5. **ATS sends reminders** to both the recruiter and the candidate.
+
+#### **Diagram (Mermaid):**
+
+```mermaid
+graph TD
+  A[Recruiter selects candidates for interview] --> B[ATS sends interview requests]
+  B --> C[Candidate picks time slot]
+  C --> D[ATS syncs time with recruiter's calendar]
+  D --> E[ATS schedules interview]
+  E --> F[ATS sends reminders to recruiter and candidate]
+```
+
+---
+## Data model
+
+```plantuml
+
+@startuml
+
+entity "User" {
+    * user_id: UUID
+    --
+    name: VARCHAR
+    email: VARCHAR
+    role: ENUM("Recruiter", "Hiring Manager")
+    created_at: TIMESTAMP
+}
+
+entity "Candidate" {
+    * candidate_id: UUID
+    --
+    name: VARCHAR
+    email: VARCHAR
+    phone: VARCHAR
+    resume: TEXT
+    status: ENUM("Applied", "Screening", "Interviewing", "Offer", "Rejected", "Hired")
+    created_at: TIMESTAMP
+    updated_at: TIMESTAMP
+}
+
+entity "Job" {
+    * job_id: UUID
+    --
+    title: VARCHAR
+    description: TEXT
+    department: VARCHAR
+    location: VARCHAR
+    status: ENUM("Open", "Closed", "On Hold")
+    created_at: TIMESTAMP
+    updated_at: TIMESTAMP
+}
+
+entity "Application" {
+    * application_id: UUID
+    --
+    candidate_id: UUID
+    job_id: UUID
+    applied_at: TIMESTAMP
+    source: VARCHAR
+    status: ENUM("Submitted", "Reviewed", "Interviewing", "Offered", "Rejected", "Hired")
+}
+
+entity "Interview" {
+    * interview_id: UUID
+    --
+    application_id: UUID
+    interviewer_id: UUID
+    scheduled_at: TIMESTAMP
+    interview_type: ENUM("Phone", "On-site", "Video")
+    feedback: TEXT
+}
+
+entity "Job Board" {
+    * job_board_id: UUID
+    --
+    name: VARCHAR
+    api_key: VARCHAR
+    created_at: TIMESTAMP
+}
+
+entity "Job Posting" {
+    * posting_id: UUID
+    --
+    job_id: UUID
+    job_board_id: UUID
+    posted_at: TIMESTAMP
+    status: ENUM("Active", "Expired", "Removed")
+}
+
+entity "Email Template" {
+    * template_id: UUID
+    --
+    name: VARCHAR
+    subject: VARCHAR
+    body: TEXT
+}
+
+User ||--o{ Job : "creates"
+Job ||--o{ Application : "receives"
+Candidate ||--o{ Application : "submits"
+Application ||--o{ Interview : "has"
+Job ||--o{ Job Posting : "posted on"
+Job Posting ||--o| Job Board : "to"
+Application ||--o| Email Template : "uses"
+
+@enduml
+```
+
+## High-level Diagram
+
+```mermaid
+graph TB
+  subgraph Frontend
+    Web[Web Application]
+    Mobile[Mobile App (Android/iOS)]
+  end
+
+  subgraph Backend
+    API[REST/GraphQL API Layer] --> Logic[Business Logic Layer]
+    Logic --> Microservices
+    Microservices --> Auth[Authentication Service (OAuth 2.0)]
+    Microservices --> JobService[Job Management Service]
+    Microservices --> CandidateService[Candidate Management Service]
+    Microservices --> Notification[Notification/Email Service]
+    Microservices --> Analytics[Analytics and Reporting Service]
+    Microservices --> Scheduler[Interview Scheduling Service]
+    Microservices --> Integrations[External Job Board Integration]
+  end
+
+  subgraph Data
+    DB1[PostgreSQL for Relational Data]
+    DB2[MongoDB for Document Storage (Resumes, etc.)]
+    Cache[Redis for Caching]
+  end
+
+  subgraph DevOps
+    CI_CD[CI/CD Pipeline]
+    Container[Docker/Kubernetes]
+    Cloud[AWS/Azure/GCP]
+    Cloud --> S3[Object Storage (Resumes/Files)]
+    Cloud --> EC2[Compute (Auto-scaling)]
+    Cloud --> Lambda[Serverless Functions (On-demand)]
+  end
+
+  Web --> API
+  Mobile --> API
+  API --> Data
+  API --> DevOps
+```
+
+## C4 Diagram
+
+To design a **highly detailed C4 diagram** for the **DevOps Authentication Microservice** of your ATS platform, we’ll use **C4 Model’s 4 levels**: **Context, Container, Component, and Code**. This detailed approach allows us to model each layer of the authentication microservice while choosing the best modern technologies for scalability, security, and maintainability.
+
+### **Level 1: Context Diagram**
+Shows the authentication microservice's role in the overall system.
+
+```mermaid
+graph TB
+    subgraph ATS_System
+        User[User (Recruiter/Manager)]
+        WebApp[Web Application]
+        MobileApp[Mobile Application (iOS/Android)]
+        API_Gateway[API Gateway]
+        AuthService[Auth Microservice]
+        Backend[Backend Services]
+    end
+
+    User --> WebApp
+    User --> MobileApp
+    WebApp --> API_Gateway
+    MobileApp --> API_Gateway
+    API_Gateway --> AuthService
+    API_Gateway --> Backend
+    AuthService --> IdentityProvider[OAuth 2.0 Provider (e.g., Auth0)]
+    AuthService --> Database[User DB (PostgreSQL)]
+    AuthService --> Redis[Redis Cache (JWT Tokens)]
+```
+
+### **Technologies:**
+- **Web App**: React.js, TypeScript
+- **Mobile App**: React Native or Flutter
+- **API Gateway**: Kong, NGINX with JWT Middleware
+- **Auth Microservice**: Node.js/Express, Spring Boot (Java)
+- **OAuth 2.0 Provider**: Auth0, Okta, AWS Cognito
+- **Database**: PostgreSQL for user management
+- **Caching**: Redis for token storage and session handling
+
+---
+
+### **Level 2: Container Diagram**
+Explains how the different containers (applications and databases) interact inside the Auth microservice.
+
+```mermaid
+graph TD
+    subgraph AuthMicroservice
+        API_Gateway2[API Gateway]
+        AuthServer[Authentication Server]
+        JWTService[JWT Issuer and Verifier]
+        OAuthClient[OAuth2.0 Client]
+        UserDB[PostgreSQL User DB]
+        Redis2[Redis for Token Caching]
+    end
+
+    API_Gateway2 --> AuthServer
+    AuthServer --> JWTService
+    AuthServer --> OAuthClient
+    AuthServer --> UserDB
+    AuthServer --> Redis2
+    JWTService --> Redis2
+    OAuthClient --> OAuthProvider[Auth0/Okta/Cognito]
+```
+
+### **Technologies:**
+- **API Gateway**: Kong Gateway or NGINX with JWT validation middleware.
+- **AuthServer**: Node.js/Express with **Passport.js** for JWT OAuth 2.0 handling, or **Spring Boot** with **Spring Security**.
+- **JWT Service**: **jsonwebtoken** (Node.js), or **jjwt** (Java) for token signing and verification.
+- **OAuth Client**: **Passport.js** (Node.js) or **Spring Security OAuth2**.
+- **User Database**: **PostgreSQL** for user storage (with encryption for sensitive data).
+- **Redis**: For caching JWT tokens to reduce database load and ensure high-speed token validation.
+
+---
+
+### **Level 3: Component Diagram**
+Detailed breakdown of the components within the **AuthService** container.
+
+```mermaid
+graph TB
+    subgraph AuthServerContainer
+        AuthController[Auth Controller]
+        UserService[User Service]
+        TokenService[JWT Service]
+        OAuthService[OAuth Client Service]
+        Redis3[Redis Cache Service]
+        DatabaseService[Database Service]
+    end
+
+    AuthController --> UserService
+    AuthController --> TokenService
+    AuthController --> OAuthService
+    TokenService --> Redis3
+    TokenService --> DatabaseService
+    OAuthService --> OAuthProvider2[OAuth Provider (Auth0/Okta)]
+    UserService --> DatabaseService
+    Redis3 --> Redis3Cache[Redis]
+    DatabaseService --> UserDB2[PostgreSQL]
+```
+
+### **Technologies:**
+- **Auth Controller**: Routes HTTP requests for login, signup, token refresh, etc. **Express.js** (Node.js) or **Spring MVC** (Java).
+- **User Service**: Manages user-related operations like registration, fetching user info. Uses **TypeORM** (Node.js) or **JPA/Hibernate** (Java).
+- **Token Service**: Generates and verifies JWT tokens. **jsonwebtoken** (Node.js) or **jjwt** (Java).
+- **OAuth Client Service**: Integrates with **OAuth 2.0** provider (e.g., Auth0, Okta) for authentication.
+- **Redis Cache Service**: Manages token caching for quick verification.
+
+---
+
+### **Level 4: Code Diagram (Example)**
+
+Here’s a breakdown of an example **JWT token generation process** in Node.js using Express and Passport.js.
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant AuthController
+    participant UserService
+    participant JWTService
+    participant RedisCache
+    participant PostgreSQL
+    participant OAuthProvider
+    
+    User->>+AuthController: Send login credentials
+    AuthController->>+UserService: Validate user in PostgreSQL
+    UserService->>+PostgreSQL: Query user credentials
+    PostgreSQL-->>-UserService: Return user details
+    UserService-->>-AuthController: Return user validation status
+    AuthController->>+OAuthProvider: (Optional) Delegate to OAuth2 Provider
+    OAuthProvider-->>-AuthController: Return OAuth tokens
+    AuthController->>+JWTService: Generate JWT token
+    JWTService->>+RedisCache: Cache token for fast retrieval
+    JWTService-->>-AuthController: Return JWT token
+    AuthController-->>-User: Send JWT token
+```
+
+### **Technologies:**
+- **JWT Service**: **jsonwebtoken** (Node.js), Passport.js for middleware, or **jjwt** (Java).
+- **Redis Cache**: Caches JWT tokens to reduce the load on the database. Used to blacklist tokens upon logout.
+
+---
+
+### **Conclusion:**
+
+This detailed C4 diagram for the **Auth microservice** gives a clear view of the technologies used at each level, from the web/mobile clients down to the data storage layer. The solution uses **OAuth 2.0** for secure, scalable authentication, **JWT** for stateless session handling, and a combination of **PostgreSQL** and **Redis** for persistent user data storage and high-speed token management.
+
+This architecture ensures the system is **scalable**, **secure**, and easy to maintain while providing support for future integrations with other third-party authentication services.
+
+## Prompts
+
+1.  "I want to create an ATS applicant tracking system from scratch, Acknowledge this URL to use that info in this conversation as a Product expert."
+2.  "I need to create from scratch a list of key functionalities. List me the basic features we should have, and try to add also the key features from competitors..."
+3.  "Act as a Staff software engineer, give me the detailed description from the three main Use cases and a complete diagram for each one using mermaid code."
+4.  "Create me a Lean Canvas diagram to understand the business model."
+5.  "Where can I see a visual version of this diagram online?"
+6.  "I'm getting this error from mermaid code you sent me..."
+7.  "Create me the mermaid code to explain this business model in a readable diagram."
+8.  "This diagram has too many elements at same level, can you make a less horizontal diagram code?"
+9.  "Act as a senior software engineer. I want to create a clear Data model diagram, explaining with detail entities, attributes (name and type), and relationships..."
+10.  "Give me the code for this in PlantUML."
+11.  "Act as a software architect expert in scalable solutions. For this business, I want a high-level software architecture diagram, with technologies. I want something for web and also for Android/iOS."
+12.  "Now I need a highly detailed C4 diagram from the DevOps Auth microservice component. Put the best technologies for each component with the latest technologies."
+13.  "Give me the list of prompts that I used in this conversation."
