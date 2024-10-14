@@ -545,3 +545,214 @@ These will be broken down into similar work tasks when their sprint cycles appro
 ---
 
 Each task has been broken down with the idea of focusing on core functionality first while considering different scenarios (happy path, errors). The **definition of done** includes functional checks and edge case handling to ensure robustness in each sprint.
+
+# Prompt #4
+>Ok, perfect, now, for each user story from the product backlog, create the work tasks for the developers. 
+>
+>Use the following format:
+>- Title with a basic summary of the story, to fast identification (shorter as possible).
+>- Description: Describe the task work (what, why, and how will implement the solution).
+>- Definition of done, with the requirements to finish the work task.
+>In the definition of done, describe the happy path and the other scenarios, for example, if we have an unauthorized user, we need to take into account how will implement the solution.
+>
+>Consider the sprint's duration and create the work tickets to add to the Sprint.
+
+Got it! Now, let’s break down each **user story** from the **Product Backlog** into **work tasks** for a team of 5 developers, ensuring that the workload is manageable within a 2-week sprint.
+
+I'll group the **work tasks** based on functionality, ensuring that each developer gets a specific portion of work in parallel while considering dependencies.
+
+---
+
+### **Sprint 1**: Core Job Posting & Candidate Application
+
+---
+
+#### **Story 1: Create and Publish Job Listings**
+
+##### **Work Tasks**:
+
+1. **Task 1: Create Job Posting Frontend Form**
+   - **Description**: Design the UI form for creating job postings, including fields for job title, description, qualifications, and more. Implement basic validation on fields.
+     - **Why**: This is the UI interface for recruiters to create job listings.
+     - **How**: Build using React (or your chosen frontend framework).
+   - **Definition of Done**: 
+     - All required fields (job title, description, etc.) are present.
+     - Form validation works for required fields.
+     - UI is responsive.
+     - **Happy Path**: Form fields can be filled and validated correctly.
+     - **Edge Cases**: Handle empty field submission, unauthorized access, or validation errors.
+
+2. **Task 2: Job Posting Backend API**
+   - **Description**: Implement backend API to accept and store job posting data from the frontend form.
+     - **Why**: To store job posting information in the database.
+     - **How**: Develop the API in Node.js/Express (or equivalent backend framework), create a job posting model, and handle form submissions.
+   - **Definition of Done**: 
+     - API endpoint to handle job posting data.
+     - Data is validated and saved to the database.
+     - Unit tests for backend logic.
+     - **Happy Path**: Job post is successfully created and stored in the database.
+     - **Edge Cases**: Handle empty data, invalid submissions, and unauthorized access.
+
+3. **Task 3: Database Schema for Job Posting**
+   - **Description**: Design the database schema for job postings, including fields for title, description, qualifications, location, etc.
+     - **Why**: To structure and store job data efficiently.
+     - **How**: Define schema in SQL or NoSQL based on the tech stack.
+   - **Definition of Done**: 
+     - Schema created with correct relationships.
+     - Data is saved successfully when posted.
+     - **Happy Path**: Job posting data is saved as per the schema.
+     - **Edge Cases**: Handle schema validation and missing fields.
+
+4. **Task 4: Job Posting List Display (Frontend)**
+   - **Description**: Create the UI to display a list of all job postings for candidates to view.
+     - **Why**: To allow candidates to view available jobs.
+     - **How**: Implement the listing page and fetch job data from the API.
+   - **Definition of Done**: 
+     - List of job postings is displayed on the frontend.
+     - Job data is fetched correctly from the backend.
+     - **Happy Path**: Job listings are displayed in real-time.
+     - **Edge Cases**: Handle empty job lists or slow API response.
+
+5. **Task 5: Job Publishing Status Update**
+   - **Description**: Add a "Published/Unpublished" status for each job post, allowing recruiters to publish/unpublish jobs.
+     - **Why**: To give recruiters control over whether jobs are live.
+     - **How**: Add a status flag to the database and UI toggle to update the status.
+   - **Definition of Done**: 
+     - Recruiter can toggle the status between "Published" and "Unpublished."
+     - Job post visibility updates accordingly on the candidate side.
+     - **Happy Path**: Recruiter can change job post status.
+     - **Edge Cases**: Handle unauthorized status updates.
+
+---
+
+#### **Story 2: Post to Multiple Channels**
+
+##### **Work Tasks**:
+
+1. **Task 6: Integration with LinkedIn API**
+   - **Description**: Implement integration with LinkedIn API to post jobs automatically from the ATS.
+     - **Why**: To enable recruiters to distribute job posts externally.
+     - **How**: Use LinkedIn’s API, handle authentication, and map job fields.
+   - **Definition of Done**: 
+     - Jobs can be posted to LinkedIn successfully.
+     - Errors are handled (e.g., API limits, authentication failures).
+     - **Happy Path**: Job posted on LinkedIn from the ATS.
+     - **Edge Cases**: Handle API errors, rate limits, or missing job fields.
+
+2. **Task 7: Integration with Indeed API**
+   - **Description**: Implement Indeed API integration to post job listings.
+     - **Why**: To expand job post distribution.
+     - **How**: Follow Indeed API documentation, authenticate, and map fields.
+   - **Definition of Done**: 
+     - Job is posted to Indeed.
+     - Handle API responses and display status in the ATS.
+     - **Happy Path**: Job published on Indeed.
+     - **Edge Cases**: Manage failures, authentication issues, and field mismatches.
+
+3. **Task 8: Status Tracker for External Job Postings**
+   - **Description**: Create a status tracker to display whether jobs have been successfully posted to external platforms.
+     - **Why**: To give recruiters visibility into posting status.
+     - **How**: Display the status next to job posts (e.g., “Posted to LinkedIn,” “Failed to Post”).
+   - **Definition of Done**: 
+     - Status updates show in real-time.
+     - UI indicates success/failure of external job postings.
+     - **Happy Path**: External job post statuses are tracked.
+     - **Edge Cases**: Handle status failures or missing APIs.
+
+---
+
+#### **Story 3: Candidate Submission**
+
+##### **Work Tasks**:
+
+1. **Task 9: Candidate Application Form (Frontend)**
+   - **Description**: Build a form that allows candidates to upload resumes and apply for job listings.
+     - **Why**: Candidates need a way to apply.
+     - **How**: Develop a frontend form with file upload capability and validation.
+   - **Definition of Done**: 
+     - Candidates can submit their resumes and application details.
+     - Form validation works for required fields.
+     - **Happy Path**: Candidate successfully submits an application.
+     - **Edge Cases**: Handle invalid file uploads, missing fields, and form errors.
+
+2. **Task 10: Application Submission Backend API**
+   - **Description**: Create the API endpoint that receives application data, stores it in the database, and links it to the job post.
+     - **Why**: To process candidate applications.
+     - **How**: Build API to handle form data, including file uploads.
+   - **Definition of Done**: 
+     - API can receive and store application data.
+     - Applications are linked to job posts in the database.
+     - **Happy Path**: Applications are submitted successfully.
+     - **Edge Cases**: Handle large file uploads, duplicate applications, and errors.
+
+3. **Task 11: Application List View for Recruiters**
+   - **Description**: Create a list view for recruiters to see all applications received for a job post.
+     - **Why**: Recruiters need to review applications.
+     - **How**: Fetch application data from the backend and display it in a table/list format.
+   - **Definition of Done**: 
+     - Recruiters can view all applications for a job post.
+     - Data includes resume, candidate details, and submission date.
+     - **Happy Path**: Recruiters see all application data.
+     - **Edge Cases**: Handle empty lists, pagination, and loading errors.
+
+---
+
+### **Sprint 2**: Candidate Parsing, Search, and Status Tracking
+
+---
+
+#### **Story 4: Resume Parsing**
+
+##### **Work Tasks**:
+
+1. **Task 12: Implement Resume Parsing Service**
+   - **Description**: Integrate a third-party resume parsing service to extract candidate details from uploaded resumes.
+     - **Why**: To structure candidate data automatically.
+     - **How**: Use a resume parsing API, send resumes for processing, and store parsed data in the database.
+   - **Definition of Done**: 
+     - Resume parsing extracts data such as name, skills, experience.
+     - Parsed data is stored in the candidate’s profile.
+     - **Happy Path**: Resumes are parsed successfully.
+     - **Edge Cases**: Handle unsupported file types, parsing errors, and missing data.
+
+2. **Task 13: Display Parsed Data on Candidate Profile**
+   - **Description**: Create a UI to display parsed resume data in a structured way on the candidate profile.
+     - **Why**: To give recruiters an easy way to review candidate details.
+     - **How**: Build a profile view that organizes parsed data (skills, experience, etc.).
+   - **Definition of Done**: 
+     - Parsed resume data is shown on the candidate profile.
+     - Data is organized for easy review.
+     - **Happy Path**: Recruiters can see all key data on profiles.
+     - **Edge Cases**: Handle cases where parsed data is incomplete or missing.
+
+---
+
+#### **Story 5: Search and Filter Candidates**
+
+##### **Work Tasks**:
+
+1. **Task 14: Implement Candidate Search Backend**
+   - **Description**: Create backend search functionality to query candidates based on keywords, skills, and experience.
+     - **Why**: To allow recruiters to find relevant candidates.
+     - **How**: Implement a search algorithm using SQL or NoSQL queries with filters.
+   - **Definition of Done**: 
+     - Recruiters
+
+ can search candidates by keywords or skills.
+     - Search results are accurate and fast.
+     - **Happy Path**: Recruiters find candidates matching search criteria.
+     - **Edge Cases**: Handle empty results, invalid queries, or unauthorized access.
+
+2. **Task 15: Candidate Search UI**
+   - **Description**: Build a frontend search bar and filter system for recruiters to search candidates.
+     - **Why**: To give recruiters an easy way to find candidates.
+     - **How**: Implement a UI search and filter system.
+   - **Definition of Done**: 
+     - Recruiters can use a search bar and filters to find candidates.
+     - Search results are displayed in a list format.
+     - **Happy Path**: Search works smoothly.
+     - **Edge Cases**: Handle slow loading, empty results, or invalid inputs.
+
+---
+
+The team of 5 developers can handle these work tasks in parallel, with each developer focusing on different areas (frontend, backend, integration, etc.). The tasks are designed to be **modular** and **independent**, ensuring smooth progress during the sprint. The work tickets fit within a 2-week sprint considering typical velocity and complexity levels.
