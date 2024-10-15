@@ -369,3 +369,64 @@ To address the capacity issue for Sprint 3, we need to adjust the workload. We'l
 - **Total:** 32 points
 
 By implementing this approach, we stay within the sprint's capacity and still deliver value, while deferring some tasks to the next sprint.
+
+## Prompt 6 - Final Sprint Plan
+Ok, to see if really make logic what you planned, explain me the work tickets for the US 6.1 and US 4.1 and tell me which ones will go to the Sprint 3 together with the tickets prioritized of the US 3.2
+
+## Response 6
+Let's break down the work tickets for **US 6.1: Automated Notifications** and **US 4.1: Interview Scheduling** to see how they can fit into Sprint 3, along with the prioritized tickets from **US 3.2**.
+
+### US 6.1: Automated Notifications
+Automated notifications involve notifying users about key events, such as status updates or interview scheduling. Here’s the breakdown of work tickets for this user story:
+
+1. **Ticket 1: Trigger Notification on Application Status Change**
+    - **Description:** Implement a basic notification trigger that activates whenever a job application status is updated (e.g., "Under Review" to "Rejected" or "Hired"). This will include setting up a mechanism to send the notification to a queue (e.g., Kafka) for processing.
+    - **Story Points:** 3
+    - **Sprint 3 Inclusion:** **Yes**
+
+2. **Ticket 2: Notification Consumer Service to Send Emails**
+    - **Description:** Create a service that consumes notification messages from the queue and sends email notifications using AWS SES. This service should be scalable and handle different types of notifications (e.g., application status change, interview scheduling).
+    - **Story Points:** 5
+    - **Sprint 3 Inclusion:** **No** (Move to Sprint 4)
+
+3. **Ticket 3: Notification Logging and Auditing**
+    - **Description:** Implement a system to log all sent notifications for auditing purposes, including recipient details, type of notification, and timestamp.
+    - **Story Points:** 3
+    - **Sprint 3 Inclusion:** **No** (Move to Sprint 4)
+
+### US 4.1: Interview Scheduling
+Interview scheduling allows recruiters to set up interview times with candidates. Here’s the breakdown:
+
+1. **Ticket 1: Basic Interview Scheduling API**
+    - **Description:** Develop an initial API to schedule an interview, allowing recruiters to create interview appointments for candidates. This will include setting basic fields like candidate ID, job ID, interview date, and time.
+    - **Story Points:** 5
+    - **Sprint 3 Inclusion:** **Yes**
+
+2. **Ticket 2: Frontend UI for Scheduling Interviews**
+    - **Description:** Implement a basic UI to allow recruiters to schedule interviews for candidates, displaying date and time pickers and integrating with the newly developed backend API.
+    - **Story Points:** 5
+    - **Sprint 3 Inclusion:** **No** (Move to Sprint 4)
+
+3. **Ticket 3: Notification Integration for Scheduled Interviews**
+    - **Description:** Integrate notifications when an interview is scheduled, sending out a reminder to the candidate via email. This ticket relies on the notification system being completed.
+    - **Story Points:** 3
+    - **Sprint 3 Inclusion:** **No** (Move to Sprint 4)
+
+### Sprint 3 Plan Summary
+**Total Story Points:** 32
+
+#### US 3.2: Manage Job Applications (21 points)
+- **Backend API for Viewing Job Applications (5 points)**
+- **Backend API for Updating Application Status (3 points)**
+- **Frontend UI for Viewing Job Applications (5 points)**
+- **Frontend UI for Updating Application Status (3 points)**
+- **Backend Audit Logging for Application Changes (3 points)**
+- **Frontend Filtering and Sorting on Job Applications List (5 points)** *(Deferred to Sprint 4)*
+
+#### US 6.1: Automated Notifications (3 points)
+- **Trigger Notification on Application Status Change (3 points)**
+
+#### US 4.1: Interview Scheduling (5 points)
+- **Basic Interview Scheduling API (5 points)**
+
+This plan allows us to stay within the sprint's capacity while delivering valuable functionalities for managing job applications, triggering notifications, and scheduling interviews. Deferred tickets will be picked up in Sprint 4 to complete the remaining tasks for these user stories.
